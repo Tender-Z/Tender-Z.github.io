@@ -16,6 +16,7 @@
 
 
 
+
     <script>
         if (document.location.search.match(/type=embed/gi)) {
             window.parent.postMessage("resize", "*");
@@ -530,6 +531,14 @@
             floatText.classList.add('animate__fadeInDown'); //动画效果
             floatText.classList.add('animate__delay-2s'); //动画延迟时间
             floatText.classList.add('text');
+            document.body.appendChild(floatText);
+
+            const floatText2 = document.createElement('h2');
+            floatText2.innerHTML = '';
+            floatText2.classList.add('animate__animated');   //动画默认加
+            floatText2.classList.add('animate__fadeInDown'); //动画效果
+            floatText2.classList.add('animate__delay-2s'); //动画延迟时间
+            floatText2.classList.add('text');
             document.body.appendChild(floatText);
         }
 
